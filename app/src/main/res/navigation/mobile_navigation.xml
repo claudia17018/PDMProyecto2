@@ -204,4 +204,18 @@
             android:id="@+id/action_detalleServicioFragment_self"
             app:destination="@id/detalleServicioFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/ServiciosWebFragment"
+        android:name="com.example.proyectopdm.ServiciosWebFragment"
+        android:label="@string/serviciosWeb"
+        tools:layout="@layout/fragment_servicios_web" >
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_web_InsertarAreaFragment"
+            app:destination="@id/web_InsertarAreaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/web_InsertarAreaFragment"
+        android:name="com.example.proyectopdm.Web_InsertarAreaFragment"
+        android:label="fragment_web__insertar_area"
+        tools:layout="@layout/fragment_web__insertar_area" />
 </navigation>

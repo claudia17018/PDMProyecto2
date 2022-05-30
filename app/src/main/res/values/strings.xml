@@ -116,5 +116,7 @@
     <string name="creArea">Crear Area</string>
     <string name="editArea">Editar Area</string>
 
+    <string name="serviciosWeb">Servicios Web</string>
+
 
 </resources>
