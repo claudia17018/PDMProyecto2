@@ -166,5 +166,28 @@
         android:id="@+id/ServiciosWebFragment"
         android:name="com.example.proyectopdm.ServiciosWebFragment"
         android:label="fragment_servicios_web"
-        tools:layout="@layout/fragment_servicios_web" />
+        tools:layout="@layout/fragment_servicios_web" >
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_buscarEstudianteFragment2"
+            app:destination="@id/buscarEstudianteFragment" />
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_web_CarreraCrearFragment3"
+            app:destination="@id/web_CarreraCrearFragment3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/buscarEstudianteFragment"
+        android:name="com.example.proyectopdm.BuscarEstudianteFragment"
+        android:label="fragment_buscar_estudiante"
+        tools:layout="@layout/fragment_buscar_estudiante" />
+    <activity
+        android:id="@+id/webNavActivity"
+        android:name="com.example.proyectopdm.webNavActivity"
+        android:label="activity_web_nav"
+        tools:layout="@layout/activity_web_nav" />
+    <fragment
+        android:id="@+id/web_CarreraCrearFragment3"
+        android:name="com.example.proyectopdm.Web_CarreraCrearFragment"
+        android:label="fragment_web__carrera_crear"
+        tools:layout="@layout/fragment_web__carrera_crear" />
 </navigation>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ServiciosWebFragment"
     android:layout_width="match_parent"
@@ -14,8 +15,79 @@
         android:layout_width="172dp"
         android:layout_height="167dp"
 
-        android:text="Ingresar datos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ingresar Area"
+        app:layout_constraintBottom_toTopOf="@+id/webbtnConsultarEstudiante"
+        app:layout_constraintEnd_toStartOf="@+id/webbtninsertarCarrera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/webbtnConsultarEstudiante"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="281dp"
+        android:text="Ingresar Carrera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/webbtninsertarusuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webbtnInsertar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/webbtninsertarusuario"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="274dp"
+        android:text="Ingresar Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/webbtnConsultarEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/webbtninsertarCarrera"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/webbtninsertaractividad"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="69dp"
+        android:text="Ingresar Actividad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/webbtnConsultarEstudiante"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/webbtninsertarCarrera"
+        android:layout_width="172dp"
+        android:layout_height="167dp"
+
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:text="Ingresar Estudiante"
+        app:layout_constraintBottom_toTopOf="@+id/webbtninsertarusuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/webbtnInsertar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33999997"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

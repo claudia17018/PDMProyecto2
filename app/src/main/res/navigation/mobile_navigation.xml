@@ -212,10 +212,42 @@
         <action
             android:id="@+id/action_ServiciosWebFragment_to_web_InsertarAreaFragment"
             app:destination="@id/web_InsertarAreaFragment" />
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_buscarEstudianteFragment"
+            app:destination="@id/buscarEstudianteFragment" />
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_web_CarreraCrearFragment"
+            app:destination="@id/web_CarreraCrearFragment" />
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_web_usuario_Fragment2"
+            app:destination="@id/web_usuario_Fragment2" />
+        <action
+            android:id="@+id/action_ServiciosWebFragment_to_web_crearActividadFragment"
+            app:destination="@id/web_crearActividadFragment" />
     </fragment>
     <fragment
         android:id="@+id/web_InsertarAreaFragment"
         android:name="com.example.proyectopdm.Web_InsertarAreaFragment"
         android:label="fragment_web__insertar_area"
         tools:layout="@layout/fragment_web__insertar_area" />
+    <fragment
+        android:id="@+id/buscarEstudianteFragment"
+        android:name="com.example.proyectopdm.BuscarEstudianteFragment"
+        android:label="fragment_buscar_estudiante"
+        tools:layout="@layout/fragment_buscar_estudiante" />
+    <fragment
+        android:id="@+id/web_CarreraCrearFragment"
+        android:name="com.example.proyectopdm.Web_CarreraCrearFragment"
+        android:label="fragment_web__carrera_crear"
+        tools:layout="@layout/fragment_web__carrera_crear" />
+    <fragment
+        android:id="@+id/web_usuario_Fragment2"
+        android:name="com.example.proyectopdm.web_usuario_Fragment"
+        android:label="fragment_web_usuario_"
+        tools:layout="@layout/fragment_web_usuario_" />
+    <fragment
+        android:id="@+id/web_crearActividadFragment"
+        android:name="com.example.proyectopdm.web_crearActividadFragment"
+        android:label="fragment_web_crear_actividad"
+        tools:layout="@layout/fragment_web_crear_actividad" />
 </navigation>

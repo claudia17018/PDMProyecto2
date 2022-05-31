@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web_navigation_service"
+    app:startDestination="@id/serviciosWebFragment">
+
+    <fragment
+        android:id="@+id/serviciosWebFragment"
+        android:name="com.example.proyectopdm.ServiciosWebFragment"
+        android:label="fragment_servicios_web"
+        tools:layout="@layout/fragment_servicios_web" >
+        <action
+            android:id="@+id/action_serviciosWebFragment_to_buscarEstudianteFragment2"
+            app:destination="@id/buscarEstudianteFragment2" />
+        <action
+            android:id="@+id/action_serviciosWebFragment_to_web_InsertarAreaFragment2"
+            app:destination="@id/web_InsertarAreaFragment2" />
+        <action
+            android:id="@+id/action_serviciosWebFragment_to_web_CarreraCrearFragment2"
+            app:destination="@id/web_CarreraCrearFragment2" />
+        <action
+            android:id="@+id/action_serviciosWebFragment_to_web_usuario_Fragment"
+            app:destination="@id/web_usuario_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/web_CarreraCrearFragment2"
+        android:name="com.example.proyectopdm.Web_CarreraCrearFragment"
+        android:label="fragment_web__carrera_crear"
+        tools:layout="@layout/fragment_web__carrera_crear" />
+    <fragment
+        android:id="@+id/web_InsertarAreaFragment2"
+        android:name="com.example.proyectopdm.Web_InsertarAreaFragment"
+        android:label="fragment_web__insertar_area"
+        tools:layout="@layout/fragment_web__insertar_area" />
+    <fragment
+        android:id="@+id/buscarEstudianteFragment2"
+        android:name="com.example.proyectopdm.BuscarEstudianteFragment"
+        android:label="fragment_buscar_estudiante"
+        tools:layout="@layout/fragment_buscar_estudiante" />
+    <fragment
+        android:id="@+id/web_usuario_Fragment"
+        android:name="com.example.proyectopdm.web_usuario_Fragment"
+        android:label="fragment_web_usuario_"
+        tools:layout="@layout/fragment_web_usuario_" />
+</navigation>

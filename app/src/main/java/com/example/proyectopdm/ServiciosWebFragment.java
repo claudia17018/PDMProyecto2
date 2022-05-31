@@ -73,10 +73,39 @@ public class ServiciosWebFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button btn1 = view.findViewById(R.id.webbtnInsertar);
+        Button btn2 = view.findViewById(R.id.webbtnConsultarEstudiante);
+        Button btn3 = view.findViewById(R.id.webbtninsertarCarrera);
+        Button btn4 = view.findViewById(R.id.webbtninsertarusuario);
+        Button btn5 = view.findViewById(R.id.webbtninsertaractividad);
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.web_InsertarAreaFragment);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.web_CarreraCrearFragment);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.buscarEstudianteFragment);
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.web_usuario_Fragment2);
+            }
+        });
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.web_crearActividadFragment);
             }
         });
     }
